@@ -10,6 +10,7 @@ This requires Docker.
 ### Build a Docker image in your own PC
 
 - Execute the following command in the directory that there exists Dockerfile.
+
 ```
 docker build -t texlab .
 ```
