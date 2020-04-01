@@ -22,3 +22,5 @@ COPY dot.gitignore /template/.gitignore
 COPY latexmkrc /template/latexmkrc
 
 WORKDIR /workdir
+
+CMD ["/bin/bash"]
