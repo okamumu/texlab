@@ -32,11 +32,15 @@ docker run -it --rm --name texlab -v (your directory):/workdir texlab texinit
 ```
 - `texcompile`: Compile a given tex file and generate a PDF file
 ```
-docker run -it --rm --name texlab -v (your directory):/workdir texlab texcompile [tex source file]
+docker run -it --rm --name texlab -v (your directory):/workdir texlab texcompile -pvc [tex source file]
 ```
 - `texdiff`: Generate a PDF file based on the difference from a given Git commit
 ```
 docker run -it --rm --name texlab -v (your directory):/workdir texlab texdiff [tex source file] [commit id]
+```
+- `texspell`: Spell checker
+```
+docker run -it --rm --name texlab -v (your directory):/workdir texlab texspell [tex source file]
 ```
 
 
