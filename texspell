@@ -1,0 +1,3 @@
+#!/bin/bash
+
+aspell --lang=en --dont-backup -c -t $@

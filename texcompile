@@ -1,0 +1,13 @@
+#!/bin/bash
+
+today=`date "+%Y%m%d"`
+
+echo "... latexmk $@"
+latexmk $@ || exit 1
+echo "... latexmk done"
+
+if [ -d ./.git ]; then
+    git config --global user.name $GIT_USER_NAME
+    git config --global user.email $GIT_USER_EMAIL
+    git commit -a -m "$today"
+fi

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ ! -d ./.git ]; then
+    git init || exit 1
+fi
+
+if [ ! -e ./latexmkrc ]; then
+    echo -n "Generating latexmkrc ..."
+    cp /template/latexmkrc ./ || exit 1
+    echo "done"
+fi
+
+if [ ! -e ./.gitattributes ]; then
+    echo -n "Generating gitattributes ..."
+    cp /template/.gitattributes ./ || exit 1
+    echo "done"
+fi
+
+if [ ! -e ./.gitignore ]; then
+    echo -n "Generating gitignore ..."
+    cp /template/.gitignore ./ || exit 1
+    echo "done"
+fi

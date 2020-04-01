@@ -1,0 +1,17 @@
+*	text=auto
+
+*.txt	text eol=lf
+*.tex	text eol=lf
+*.cls	text eol=lf
+*.sty	text eol=lf
+*.bib text eol=lf
+*.bbl text eol=lf
+*.bst text eol=lf
+
+*.md  text eol=lf
+
+*.sh  text eol=lf
+
+*.eps binary
+*.ps  binary
+*.pdf binary
